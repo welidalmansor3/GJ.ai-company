@@ -3,18 +3,18 @@ import streamlit as st
 # --- SAYFA AYARLARI ---
 st.set_page_config(page_title="GJ.AI | Great Job AI Company", page_icon="🚀", layout="wide")
 
-# --- ÖZEL CSS TASARIMI (CORPORATE & REALISTIC) ---
+# --- ÖZEL CSS TASARIMI (BEYAZ KURUMSAL TEMA) ---
 st.markdown("""
 <style>
-    /* Genel Arka Plan ve Yazı Tipi */
-    .main { background-color: #050509; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+    /* Genel Arka Plan ve Yazı Tipi (BEYAZ) */
+    .main { background-color: #f8f9fa; color: #1f1f1f; font-family: 'Inter', sans-serif; }
     
     /* Streamlit'in çirkin üst barını ve alt yazısını gizle */
     header {visibility: hidden;}
     footer {visibility: hidden;}
     
-    /* Başlıklar */
-    h1, h2, h3 { color: #ffffff !important; font-weight: 800 !important; letter-spacing: -0.5px; }
+    /* Başlıklar (KOYU) */
+    h1, h2, h3 { color: #0d0d0d !important; font-weight: 800 !important; letter-spacing: -0.5px; }
     
     /* Butonlar (Mavi-Mor Gradient) */
     .stButton>button {
@@ -26,27 +26,27 @@ st.markdown("""
         transform: translateY(-3px); box-shadow: 0 8px 25px rgba(37, 117, 252, 0.4);
     }
     
-    /* Kart Tasarımı (Ürünler ve Kurucular için) */
+    /* Kart Tasarımı (Beyaz, Hafif Gölgeli) */
     .card {
-        background: linear-gradient(145deg, #101014, #16161a);
-        padding: 30px; border-radius: 16px; 
-        border: 1px solid #252530; 
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        background: #ffffff; padding: 30px; border-radius: 16px; 
+        border: 1px solid #e2e8f0; 
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
         transition: all 0.3s ease; height: 100%;
     }
     .card:hover {
         border: 1px solid #2575fc;
-        box-shadow: 0 15px 40px rgba(37, 117, 252, 0.15);
+        box-shadow: 0 10px 15px rgba(37, 117, 252, 0.1);
+        transform: translateY(-5px);
     }
     
-    /* Status Badge (Live / Under Development) */
+    /* Status Badge */
     .badge-live { background-color: #10b981; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; }
     .badge-dev { background-color: #f59e0b; color: black; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; }
     
     /* Kurucu Kartları */
     .founder-card {
-        background-color: #101014; padding: 30px; border-radius: 16px; text-align: center;
-        border: 1px solid #252530; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        background-color: #ffffff; padding: 30px; border-radius: 16px; text-align: center;
+        border: 1px solid #e2e8f0; box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     }
     
     /* Linkler */
@@ -54,10 +54,10 @@ st.markdown("""
     a:hover { color: #6a11cb !important; }
     
     /* Ayırıcı Çizgi */
-    hr { border: 1px solid #252530 !important; margin: 40px 0px; }
+    hr { border: 1px solid #e2e8f0 !important; margin: 40px 0px; }
     
-    /* Gri Alt Metin */
-    .subtext { color: #a0a0a0; font-size: 18px; line-height: 1.6; }
+    /* Gri Alt Metin (Beyaz arka plana uygun koyu gri) */
+    .subtext { color: #4a5568; font-size: 18px; line-height: 1.6; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -111,7 +111,7 @@ with tab2:
     st.markdown("""
     **Purpose:** Transform shipment tracking into a transparent, secure, and driver-honoring experience with real-time telemetry, AI risk analysis, and driver motivation systems.
     """)
-    st.markdown("*Status: Core architecture complete. B2B API will be available Q3 2024.*")
+    st.markdown("*Status: Core architecture complete. B2B API will be available soon.*")
     st.markdown("</div>", unsafe_allow_html=True)
     st.markdown("---")
 
@@ -166,7 +166,7 @@ with tab4:
         <div class="founder-card">
             <h3>Welid Almansor</h3>
             <p style="color: #2575fc; font-weight: bold; font-size: 18px;">Founder & Chief Architect</p>
-            <p style="color: #e0e0e0; text-align: left; margin-top: 20px;">Architect of the GJ.AI ecosystem. Welid designed the core AI pipelines, token optimization strategies, and B2B licensing models. He holds all IP and strategic direction for the company's future in global markets.</p>
+            <p style="color: #4a5568; text-align: left; margin-top: 20px;">Architect of the GJ.AI ecosystem. Welid designed the core AI pipelines, token optimization strategies, and B2B licensing models. He holds all IP and strategic direction for the company's future in global markets.</p>
         </div>
         """, unsafe_allow_html=True)
         
@@ -175,7 +175,7 @@ with tab4:
         <div class="founder-card">
             <h3>Hanna</h3>
             <p style="color: #2575fc; font-weight: bold; font-size: 18px;">Co-Founder & Lead Developer</p>
-            <p style="color: #e0e0e0; text-align: left; margin-top: 20px;">Driving the technical execution and development of the GJ.AI platforms. Hanna ensures the seamless integration of AI models, user experience optimization, and robust infrastructure for enterprise partners.</p>
+            <p style="color: #4a5568; text-align: left; margin-top: 20px;">Driving the technical execution and development of the GJ.AI platforms. Hanna ensures the seamless integration of AI models, user experience optimization, and robust infrastructure for enterprise partners.</p>
         </div>
         """, unsafe_allow_html=True)
 
